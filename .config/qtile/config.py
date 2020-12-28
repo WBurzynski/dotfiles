@@ -166,7 +166,7 @@ groups = []
 
 # Allocate layouts and labels
 group_names = ["1", "2", "3", "4", "5", "6", "7", "8",]
-group_labels = ["", "", "", "", "", "", "", "",]
+group_labels = [" 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ",]
 group_layouts = ["monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "monadtall",]
 
 for i in range(len(group_names)):
@@ -238,18 +238,20 @@ mySep = widget.Sep(
 def init_widgets_list():
     prompt = "{0}@{1}: ".format(os.environ["USER"], socket.gethostname())
     widgets_list = [
-            widget.GroupBox(font="FontAwesome",
-                fontsize = 20,
+            widget.GroupBox(
+                font="MesloLGS NF",
+                fontsize = 14,
                 margin_y = 3,
-                margin_x = 0,
-                padding_y = 6,
-                padding_x = 5,
-                borderwidth = 0,
+                margin_x = 10,
+                padding_y = 0,
+                padding_x = 0,
+                spacing = 5,
+                borderwidth = 2,
                 disable_drag = True,
                 active = colors[3],
                 inactive = colors[2],
                 rounded = False,
-                highlight_method = "text",
+                highlight_method = "border",
                 this_current_screen_border = colors[1],),
             mySep,
             widget.CurrentLayoutIcon(
