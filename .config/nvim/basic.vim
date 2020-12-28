@@ -73,7 +73,7 @@ noremap <Leader>bc :bd<CR>
 " folding brackets
 set foldmethod=marker
 set foldmarker={,}
-set foldcolumn=3
+" set foldcolumn=3
 
 " persistent folds across vim sessions
 autocmd BufWinLeave *.* mkview 
