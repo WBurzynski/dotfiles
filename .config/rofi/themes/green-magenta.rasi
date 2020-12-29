@@ -1,0 +1,85 @@
+/**
+ * ROFI Color theme
+ * NAME: green-magenta.rasi
+ * DESCRIPTION: This is a centered prompt.
+ * AUTHOR: wburzynski
+ */
+
+* {
+    background-color:            #002f00;
+    border-color:                #ff00ff;
+    text-color:                  #ffffff;
+    font:                        "Ubuntu Mono 12";
+    prompt-font:                 "MesloLGS NF Bold 12";
+    prompt-background:           #ff00ff;
+    prompt-foreground:           #ffffff;
+    prompt-padding:              4px;
+    alternate-normal-background: #007f00;
+    alternate-normal-foreground: @text-color;
+    selected-normal-background:  #ff00ff;
+    selected-normal-foreground:  #ffffff;
+    spacing:                     3;
+}
+#window {
+    border:  2;
+    padding: 5;
+}
+#mainbox {
+    border:  0;
+    padding: 0;
+}
+#message {
+    border:       1px dash 0px 0px ;
+    padding:      1px ;
+}
+#listview {
+    fixed-height: 0;
+    border:       1px dash 1px 1px ;
+    spacing:      2px ;
+    scrollbar:    true;
+    padding:      1px 0px 0px 1px;
+}
+#element {
+    border:  0px;
+    padding: 0px 0px 0px 0px;
+}
+#element.selected.normal {
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
+}
+#element.alternate.normal {
+    background-color: @alternate-normal-background;
+    text-color:       @alternate-normal-foreground;
+}
+#scrollbar {
+    width:        0px ;
+    border:       0;
+    handle-width: 0px ;
+    padding:      0;
+}
+#sidebar {
+    border: 2px dash 0px 0px ;
+}
+#button.selected {
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
+}
+#inputbar {
+    spacing:    0;
+    padding:    1px ;
+}
+#case-indicator {
+    spacing:    0;
+}
+#entry {
+    padding: 4px 4px;
+    expand: false;
+    width: 10em;
+}
+#prompt {
+    padding:          @prompt-padding;
+    background-color: @prompt-background;
+    text-color:       @prompt-foreground;
+    font:             @prompt-font;
+    border-radius:    2px;
+}

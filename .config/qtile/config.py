@@ -250,7 +250,7 @@ def init_widgets_list():
                 disable_drag = True,
                 active = colors[3],
                 inactive = colors[2],
-                rounded = False,
+                rounded = True,
                 highlight_method = "border",
                 this_current_screen_border = colors[1],),
             mySep,
@@ -331,9 +331,9 @@ widgets_screen2 = init_widgets_screen2()
 
 
 def init_screens():
-    return [Screen(top=bar.Bar(widgets=init_widgets_screen1(), size=26, margin=5)),
-            Screen(top=bar.Bar(widgets=init_widgets_screen2(), size=26, margin=5)),
-            Screen(top=bar.Bar(widgets=init_widgets_screen1(), size=26, margin=5))]
+    return [Screen(top=bar.Bar(widgets=init_widgets_screen1(), size=26, margin=0)),
+            Screen(top=bar.Bar(widgets=init_widgets_screen2(), size=26, margin=0)),
+            Screen(top=bar.Bar(widgets=init_widgets_screen1(), size=26, margin=0))]
             
 screens = init_screens()
 
